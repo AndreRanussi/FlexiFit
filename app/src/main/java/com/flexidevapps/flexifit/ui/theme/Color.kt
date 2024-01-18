@@ -1,4 +1,4 @@
-package com.flexidevapps.flexifit.ui.theme
+package com.flexidevapps.flexifit
 
 import androidx.compose.ui.graphics.Color
 

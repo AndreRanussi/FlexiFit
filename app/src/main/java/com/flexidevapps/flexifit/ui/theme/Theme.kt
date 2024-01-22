@@ -7,8 +7,8 @@ import androidx.compose.material.lightColors
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.ui.graphics.Color
-import com.flexidevapps.flexifit.core.core_presentation.Dimensions
-import com.flexidevapps.flexifit.core.core_presentation.LocalSpacing
+import com.flexidevapps.flexifit.core.presentation.Dimensions
+import com.flexidevapps.flexifit.core.presentation.LocalSpacing
 
 private val DarkColorPalette = darkColors(
     primary = Cyan,

@@ -1,4 +1,4 @@
-package com.flexidevapps.flexifit.core.core_presentation
+package com.flexidevapps.flexifit.core.presentation
 
 
 import androidx.compose.runtime.compositionLocalOf

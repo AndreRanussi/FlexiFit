@@ -9,7 +9,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.dp
-import com.flexidevapps.flexifit.core.core_presentation.LocalSpacing
+import com.flexidevapps.flexifit.core.presentation.LocalSpacing
 
 @Composable
 fun ActionButton(

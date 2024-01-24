@@ -1,4 +1,4 @@
-package com.flexidevapps.flexifit.onboarding.onboarding_presentation.components
+package com.flexidevapps.flexifit.onboarding.presentation.components
 
 import androidx.compose.ui.graphics.Color
 import androidx.compose.foundation.background

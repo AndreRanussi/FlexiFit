@@ -1,4 +1,4 @@
-package com.flexidevapps.flexifit.onboarding.onboarding_presentation.welcome
+package com.flexidevapps.flexifit.onboarding.presentation.welcome
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -17,7 +17,7 @@ import com.flexidevapps.flexifit.R
 import com.flexidevapps.flexifit.core.presentation.LocalSpacing
 import com.flexidevapps.flexifit.core.navigation.Route
 import com.flexidevapps.flexifit.core.util.UiEvent
-import com.flexidevapps.flexifit.onboarding.onboarding_presentation.components.ActionButton
+import com.flexidevapps.flexifit.onboarding.presentation.components.ActionButton
 
 @Composable
 fun WelcomeScreen(
@@ -39,7 +39,7 @@ fun WelcomeScreen(
         Spacer(modifier = Modifier.height(spacing.spaceMedium))
         ActionButton(
             text = stringResource(id = R.string.next),
-            onClick = { onNavigate(UiEvent.Navigate(Route.DOB)) },
+            onClick = { onNavigate(UiEvent.Navigate(Route.GENDER)) },
             modifier = Modifier.align(Alignment.CenterHorizontally),
         )
 

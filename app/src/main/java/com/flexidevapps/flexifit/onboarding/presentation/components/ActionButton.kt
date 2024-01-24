@@ -1,4 +1,4 @@
-package com.flexidevapps.flexifit.onboarding.onboarding_presentation.components
+package com.flexidevapps.flexifit.onboarding.presentation.components
 
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -24,7 +24,6 @@ fun ActionButton(
         modifier = modifier,
         enabled = isEnabled,
         shape = RoundedCornerShape(100.dp)
-
     ) {
         Text(
             text = text,

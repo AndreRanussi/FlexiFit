@@ -70,7 +70,6 @@ dependencies {
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.compose.ui:ui-graphics")
 
-
     // Room
     implementation("androidx.room:room-ktx:2.6.1")
     kapt("androidx.room:room-compiler:2.6.1")
@@ -80,7 +79,7 @@ dependencies {
     implementation("com.google.dagger:hilt-android:2.50")
     kapt("com.google.dagger:hilt-compiler:2.50")
 
-    kapt("androidx.hilt:hilt-compiler:1.1.0")
+//    kapt("androidx.hilt:hilt-compiler:1.1.0")
     implementation("androidx.hilt:hilt-navigation-compose:1.1.0")
 
     // Retrofit
@@ -103,7 +102,6 @@ dependencies {
     testImplementation("androidx.test.ext:junit:1.1.5")
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.0")
     testImplementation("com.google.truth:truth:1.1.3")
-    testImplementation("io.mockk:mockk-android:1.10.0")
     testImplementation("io.mockk:mockk:1.10.0")
 //    testImplementation("app.cash.turbine:1.0.0")
     testImplementation("com.squareup.okhttp3:mockwebserver:4.9.3")

@@ -3,21 +3,17 @@ package com.flexidevapps.flexifit
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Surface
-import androidx.compose.material.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.flexidevapps.flexifit.core.navigation.Route
 import com.flexidevapps.flexifit.core.navigation.navigate
-import com.flexidevapps.flexifit.onboarding.onboarding_presentation.welcome.WelcomeScreen
+import com.flexidevapps.flexifit.onboarding.presentation.gender.GenderScreen
+import com.flexidevapps.flexifit.onboarding.presentation.welcome.WelcomeScreen
 import com.flexidevapps.flexifit.ui.theme.FlexFitTheme
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,10 +27,11 @@ class MainActivity : ComponentActivity() {
                     composable(Route.WELCOME) {
                         WelcomeScreen(onNavigate = navController::navigate)
                     }
+                    composable(Route.GENDER) {
+                        GenderScreen(onNavigate = navController::navigate)
+                    }
                     composable(Route.DOB) {
 
-                    }
-                    composable(Route.GENDER) {
 
                     }
                     composable(Route.HEIGHT) {

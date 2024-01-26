@@ -16,11 +16,12 @@ class DefaultPreferences(
             .apply()
     }
 
-    override fun saveAge(dob: String) {
+    override fun saveDob(dob: String) {
         sharedPref.edit()
             .putString(Preferences.KEY_DOB, dob)
             .apply()
     }
+
 
     override fun saveWeight(weight: Float) {
         sharedPref.edit()

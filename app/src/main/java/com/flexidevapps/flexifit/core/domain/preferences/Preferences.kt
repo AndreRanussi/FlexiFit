@@ -7,7 +7,7 @@ import com.flexidevapps.flexifit.core.domain.model.UserInfo
 
 interface Preferences {
     fun saveGender(gender: Gender)
-    fun saveAge(dob: String)
+    fun saveDob(dob: String)
     fun saveWeight(weight: Float)
     fun saveHeight(height: Int)
     fun saveActivityLevel(level: ActivityLevel)

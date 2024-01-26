@@ -11,9 +11,9 @@ import com.flexidevapps.flexifit.core.presentation.Dimensions
 import com.flexidevapps.flexifit.core.presentation.LocalSpacing
 
 private val DarkColorPalette = darkColors(
-    primary = DarkCyan,
-    primaryVariant = VariantGray,
-    secondary = Cyan,
+    primary = BrightGreen,
+    primaryVariant = DarkGreen,
+    secondary = Orange,
     background = MediumGray,
     onBackground = TextWhite,
     surface = LightGray,
@@ -23,9 +23,9 @@ private val DarkColorPalette = darkColors(
 )
 
 private val LightColorPalette = lightColors(
-    primary = Cyan,
-    primaryVariant = VariantGray,
-    secondary = DarkCyan,
+    primary = BrightGreen,
+    primaryVariant = DarkGreen,
+    secondary = Orange,
     background = Color.White,
     onBackground = DarkGray,
     surface = Color.White,

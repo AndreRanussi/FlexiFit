@@ -8,6 +8,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.flexidevapps.flexifit.core.navigation.Route
 import com.flexidevapps.flexifit.core.navigation.navigate
+import com.flexidevapps.flexifit.onboarding.presentation.age.DobScreen
 import com.flexidevapps.flexifit.onboarding.presentation.gender.GenderScreen
 import com.flexidevapps.flexifit.onboarding.presentation.welcome.WelcomeScreen
 import com.flexidevapps.flexifit.ui.theme.FlexFitTheme
@@ -31,6 +32,7 @@ class MainActivity : ComponentActivity() {
                         GenderScreen(onNavigate = navController::navigate)
                     }
                     composable(Route.DOB) {
+                        DobScreen()
 
 
                     }

@@ -1,7 +1,7 @@
 package com.flexidevapps.flexifit.onboarding.presentation.gender
 
 
-import androidx.compose.material.icons.Icons
+
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue

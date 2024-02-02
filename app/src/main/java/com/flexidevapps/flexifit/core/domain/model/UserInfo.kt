@@ -2,7 +2,7 @@ package com.flexidevapps.flexifit.core.domain.model
 
 data class UserInfo(
     val gender: Gender,
-    val dob: String,
+    val dob: Long,
     val weight: Float,
     val height: Int,
     val activityLevel: ActivityLevel,

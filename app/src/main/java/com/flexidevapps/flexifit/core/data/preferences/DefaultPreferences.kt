@@ -16,9 +16,9 @@ class DefaultPreferences(
             .apply()
     }
 
-    override fun saveDob(dob: String) {
+    override fun saveDob(dob: Long) {
         sharedPref.edit()
-            .putString(Preferences.KEY_DOB, dob)
+            .putLong(Preferences.KEY_DOB, dob)
             .apply()
     }
 
@@ -66,7 +66,7 @@ class DefaultPreferences(
     }
 
     override fun loadUserInfo(): UserInfo {
-        val dob = sharedPref.getString(Preferences.KEY_DOB, null)
+        val dob = sharedPref.getLong(Preferences.KEY_DOB, -1)
         val height = sharedPref.getInt(Preferences.KEY_HEIGHT, -1)
         val weight = sharedPref.getFloat(Preferences.KEY_WEIGHT, -1f)
         val genderString = sharedPref.getString(Preferences.KEY_GENDER, null)
@@ -78,7 +78,7 @@ class DefaultPreferences(
 
         return UserInfo(
             gender = Gender.fromString(genderString ?: "male"),
-            dob = dob ?: "01/01/2000",
+            dob = dob,
             weight = weight,
             height = height,
             activityLevel = ActivityLevel.fromString(activityLevelString ?: "moderately_active"),

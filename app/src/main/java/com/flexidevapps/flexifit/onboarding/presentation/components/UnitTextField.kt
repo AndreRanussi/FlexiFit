@@ -27,7 +27,7 @@ fun UnitTextField(
      modifier: Modifier = Modifier,
      textStyle: TextStyle = TextStyle(
          color = MaterialTheme.colors.primaryVariant,
-         fontSize = 70.sp
+         fontSize = 50.sp
      ),
 ) {
     val spacing = LocalSpacing.current
